@@ -1,0 +1,27 @@
+source("global.R")
+
+ui <- page_sidebar(
+  sidebar = sidebar(
+    selectInput("dist_selected", label="分布", choices = distributions, selected = "正規分布"),
+    uiOutput("param1"),
+    uiOutput("param2"),
+    uiOutput("param3")
+  )
+)
+
+
+  
+  
+server <- function(input, output) {
+  
+  observeEvent(input$dist_selected, {
+    selected_dist <- distributions[distributions == input$dist_selected] |> names()
+    ui_switch(input$dist_selected)
+  })
+
+}
+
+
+
+
+shinyApp(ui = ui, server = server)
