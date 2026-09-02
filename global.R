@@ -248,11 +248,11 @@ dist_function <- function(dist){
   } else if(dist == "負の二項分布"){
     "$$Nbinom(x,n,p)=_{x+n+1}C_{x} \\cdot p^x(1-p)^n$$"
   } else if(dist == "t分布"){
-    "$$t=\\frac{x-\\mu}{s/ \\sqrt n}$$"
+    "$$t(x, \\nu)=\\frac{\\Gamma(\\nu+1)/2}{\\sqrt{\\nu \\pi} \\cdot \\Gamma(\\nu/2)} \\cdot (1+x^2/\\nu)^{-(\\nu+1)/2}$$"
   } else if(dist == "コーシー分布"){
     "$$Cauchy(x, t, s)=\\frac{1}{s \\cdot \\pi (1+((x-t)/s)^2)} $$"
   } else if(dist == "ロジスティック分布"){
-    "$$logis(x)=\\frac{1}{(1+\\exp(-(ax+b))}$$"
+    "$$Logistic(x, \\mu, s)=\\frac{\\exp(-x)}{s(1+\\exp(-(x-\\mu)/s)^2)}$$"
   } else if(dist == "対数正規分布"){
     "$$Lognorm(x, \\mu, \\sigma)=\\frac{1}{x\\sigma\\sqrt{2\\pi}} \\cdot \\exp(-\\frac{(\\ln x-\\mu)^2}{2\\sigma^2})$$"
   } else if(dist == "ベータ分布"){

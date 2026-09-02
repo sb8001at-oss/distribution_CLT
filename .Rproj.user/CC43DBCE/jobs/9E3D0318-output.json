@@ -1,4 +1,0 @@
-[1,"=> shiny::runApp()\n\n"]
-[2,"Loading required package: shiny\r\n"]
-[2,"Error in source(\"global.R\") : global.R:235:31: unexpected '{'\r\n234: \r\n235: dist_function <- funtion(dist){\r\n                                   ^\r\nCalls: <Anonymous> ... sourceUTF8 -> eval -> eval -> ..stacktraceon.. -> source\r\nExecution halted\r\n"]
-[1,"\nShiny application failed (exit status 1).\n\n"]
