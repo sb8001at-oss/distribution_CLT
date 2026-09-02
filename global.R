@@ -65,7 +65,7 @@ dist_rand_f <- function(dist, n, params){
   } else if(dist == "負の二項分布"){
     rnbinom(n, size = params[[1]], prob = params[[2]])
   } else if(dist == "t分布"){
-    rt(n, df = params[1], ncp = params[[2]])
+    rt(n, df = params[[1]], ncp = params[[2]])
   } else if(dist == "コーシー分布"){
     rcauchy(n, location = params[[1]], scale = params[[2]])
   } else if(dist == "ロジスティック分布"){
