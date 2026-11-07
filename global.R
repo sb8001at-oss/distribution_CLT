@@ -234,7 +234,7 @@ dist_explanation <- function(dist){
 
 dist_function <- function(dist){
   if(dist == "正規分布"){
-    "$$ Norm(x, \\mu, \\sigma)=\\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\cdot \\exp \\left( \\frac{(x-\\mu)^2}{2\\sigma^2} \\right) $$"
+    "$$ Norm(x, \\mu, \\sigma)=\\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\cdot \\exp \\left( -\\frac{(x-\\mu)^2}{2\\sigma^2} \\right) $$"
   } else if(dist == "一様分布"){
     "$$Uniform(x, a, b)=\\frac{1}{b-a}$$"
   } else if(dist == "二項分布"){
